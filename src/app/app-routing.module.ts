@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 import { CountriesModule } from './countries/countries.module';
 
-import { HomePageComponent } from './shared/pages/homePage/homePage.component';
 import { AboutPageComponent } from './shared/pages/about-page/about-page.component';
 import { ContactPageComponent } from './shared/pages/contact-page/contact-page.component';
 
@@ -26,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'countries',
+    redirectTo: 'countries/by-capital',
   }
 ];
 
